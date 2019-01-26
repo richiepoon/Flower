@@ -1,0 +1,872 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		427538F821FD23F000737FF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427538F721FD23F000737FF3 /* AppDelegate.swift */; };
+		427538FA21FD23F000737FF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427538F921FD23F000737FF3 /* ViewController.swift */; };
+		427538FD21FD23F000737FF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 427538FB21FD23F000737FF3 /* Main.storyboard */; };
+		427538FF21FD23F500737FF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 427538FE21FD23F500737FF3 /* Assets.xcassets */; };
+		4275390221FD23F500737FF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4275390021FD23F500737FF3 /* LaunchScreen.storyboard */; };
+		4275390D21FD23F500737FF3 /* FlowerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4275390C21FD23F500737FF3 /* FlowerTests.swift */; };
+		4275391821FD23F500737FF3 /* FlowerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4275391721FD23F500737FF3 /* FlowerUITests.swift */; };
+		4275391D21FD23F500737FF3 /* Flower WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 4275391C21FD23F500737FF3 /* Flower WatchKit App.app */; };
+		4275392321FD23F500737FF3 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4275392121FD23F500737FF3 /* Interface.storyboard */; };
+		4275392521FD23F600737FF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4275392421FD23F600737FF3 /* Assets.xcassets */; };
+		4275392C21FD23F600737FF3 /* Flower WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4275392B21FD23F600737FF3 /* Flower WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4275393121FD23F600737FF3 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4275393021FD23F600737FF3 /* InterfaceController.swift */; };
+		4275393321FD23F600737FF3 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4275393221FD23F600737FF3 /* ExtensionDelegate.swift */; };
+		4275393521FD23F600737FF3 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4275393421FD23F600737FF3 /* NotificationController.swift */; };
+		4275393721FD23F600737FF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4275393621FD23F600737FF3 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4275390921FD23F500737FF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 427538EC21FD23F000737FF3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 427538F321FD23F000737FF3;
+			remoteInfo = Flower;
+		};
+		4275391421FD23F500737FF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 427538EC21FD23F000737FF3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 427538F321FD23F000737FF3;
+			remoteInfo = Flower;
+		};
+		4275391E21FD23F500737FF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 427538EC21FD23F000737FF3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4275391B21FD23F500737FF3;
+			remoteInfo = "Flower WatchKit App";
+		};
+		4275392D21FD23F600737FF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 427538EC21FD23F000737FF3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4275392A21FD23F600737FF3;
+			remoteInfo = "Flower WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4275393F21FD23F600737FF3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4275392C21FD23F600737FF3 /* Flower WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4275394321FD23F600737FF3 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				4275391D21FD23F500737FF3 /* Flower WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		427538F421FD23F000737FF3 /* Flower.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flower.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		427538F721FD23F000737FF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		427538F921FD23F000737FF3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		427538FC21FD23F000737FF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		427538FE21FD23F500737FF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4275390121FD23F500737FF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4275390321FD23F500737FF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4275390821FD23F500737FF3 /* FlowerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlowerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4275390C21FD23F500737FF3 /* FlowerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerTests.swift; sourceTree = "<group>"; };
+		4275390E21FD23F500737FF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4275391321FD23F500737FF3 /* FlowerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlowerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4275391721FD23F500737FF3 /* FlowerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerUITests.swift; sourceTree = "<group>"; };
+		4275391921FD23F500737FF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4275391C21FD23F500737FF3 /* Flower WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flower WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4275392221FD23F500737FF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		4275392421FD23F600737FF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4275392621FD23F600737FF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4275392B21FD23F600737FF3 /* Flower WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Flower WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4275393021FD23F600737FF3 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		4275393221FD23F600737FF3 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		4275393421FD23F600737FF3 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		4275393621FD23F600737FF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4275393821FD23F600737FF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4275393921FD23F600737FF3 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		427538F121FD23F000737FF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4275390521FD23F500737FF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4275391021FD23F500737FF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4275392821FD23F600737FF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		427538EB21FD23F000737FF3 = {
+			isa = PBXGroup;
+			children = (
+				427538F621FD23F000737FF3 /* Flower */,
+				4275390B21FD23F500737FF3 /* FlowerTests */,
+				4275391621FD23F500737FF3 /* FlowerUITests */,
+				4275392021FD23F500737FF3 /* Flower WatchKit App */,
+				4275392F21FD23F600737FF3 /* Flower WatchKit Extension */,
+				427538F521FD23F000737FF3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		427538F521FD23F000737FF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				427538F421FD23F000737FF3 /* Flower.app */,
+				4275390821FD23F500737FF3 /* FlowerTests.xctest */,
+				4275391321FD23F500737FF3 /* FlowerUITests.xctest */,
+				4275391C21FD23F500737FF3 /* Flower WatchKit App.app */,
+				4275392B21FD23F600737FF3 /* Flower WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		427538F621FD23F000737FF3 /* Flower */ = {
+			isa = PBXGroup;
+			children = (
+				427538F721FD23F000737FF3 /* AppDelegate.swift */,
+				427538F921FD23F000737FF3 /* ViewController.swift */,
+				427538FB21FD23F000737FF3 /* Main.storyboard */,
+				427538FE21FD23F500737FF3 /* Assets.xcassets */,
+				4275390021FD23F500737FF3 /* LaunchScreen.storyboard */,
+				4275390321FD23F500737FF3 /* Info.plist */,
+			);
+			path = Flower;
+			sourceTree = "<group>";
+		};
+		4275390B21FD23F500737FF3 /* FlowerTests */ = {
+			isa = PBXGroup;
+			children = (
+				4275390C21FD23F500737FF3 /* FlowerTests.swift */,
+				4275390E21FD23F500737FF3 /* Info.plist */,
+			);
+			path = FlowerTests;
+			sourceTree = "<group>";
+		};
+		4275391621FD23F500737FF3 /* FlowerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4275391721FD23F500737FF3 /* FlowerUITests.swift */,
+				4275391921FD23F500737FF3 /* Info.plist */,
+			);
+			path = FlowerUITests;
+			sourceTree = "<group>";
+		};
+		4275392021FD23F500737FF3 /* Flower WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				4275392121FD23F500737FF3 /* Interface.storyboard */,
+				4275392421FD23F600737FF3 /* Assets.xcassets */,
+				4275392621FD23F600737FF3 /* Info.plist */,
+			);
+			path = "Flower WatchKit App";
+			sourceTree = "<group>";
+		};
+		4275392F21FD23F600737FF3 /* Flower WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4275393021FD23F600737FF3 /* InterfaceController.swift */,
+				4275393221FD23F600737FF3 /* ExtensionDelegate.swift */,
+				4275393421FD23F600737FF3 /* NotificationController.swift */,
+				4275393621FD23F600737FF3 /* Assets.xcassets */,
+				4275393821FD23F600737FF3 /* Info.plist */,
+				4275393921FD23F600737FF3 /* PushNotificationPayload.apns */,
+			);
+			path = "Flower WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		427538F321FD23F000737FF3 /* Flower */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4275394421FD23F600737FF3 /* Build configuration list for PBXNativeTarget "Flower" */;
+			buildPhases = (
+				427538F021FD23F000737FF3 /* Sources */,
+				427538F121FD23F000737FF3 /* Frameworks */,
+				427538F221FD23F000737FF3 /* Resources */,
+				4275394321FD23F600737FF3 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4275391F21FD23F500737FF3 /* PBXTargetDependency */,
+			);
+			name = Flower;
+			productName = Flower;
+			productReference = 427538F421FD23F000737FF3 /* Flower.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4275390721FD23F500737FF3 /* FlowerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4275394721FD23F600737FF3 /* Build configuration list for PBXNativeTarget "FlowerTests" */;
+			buildPhases = (
+				4275390421FD23F500737FF3 /* Sources */,
+				4275390521FD23F500737FF3 /* Frameworks */,
+				4275390621FD23F500737FF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4275390A21FD23F500737FF3 /* PBXTargetDependency */,
+			);
+			name = FlowerTests;
+			productName = FlowerTests;
+			productReference = 4275390821FD23F500737FF3 /* FlowerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4275391221FD23F500737FF3 /* FlowerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4275394A21FD23F600737FF3 /* Build configuration list for PBXNativeTarget "FlowerUITests" */;
+			buildPhases = (
+				4275390F21FD23F500737FF3 /* Sources */,
+				4275391021FD23F500737FF3 /* Frameworks */,
+				4275391121FD23F500737FF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4275391521FD23F500737FF3 /* PBXTargetDependency */,
+			);
+			name = FlowerUITests;
+			productName = FlowerUITests;
+			productReference = 4275391321FD23F500737FF3 /* FlowerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		4275391B21FD23F500737FF3 /* Flower WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4275394021FD23F600737FF3 /* Build configuration list for PBXNativeTarget "Flower WatchKit App" */;
+			buildPhases = (
+				4275391A21FD23F500737FF3 /* Resources */,
+				4275393F21FD23F600737FF3 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4275392E21FD23F600737FF3 /* PBXTargetDependency */,
+			);
+			name = "Flower WatchKit App";
+			productName = "Flower WatchKit App";
+			productReference = 4275391C21FD23F500737FF3 /* Flower WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		4275392A21FD23F600737FF3 /* Flower WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4275393C21FD23F600737FF3 /* Build configuration list for PBXNativeTarget "Flower WatchKit Extension" */;
+			buildPhases = (
+				4275392721FD23F600737FF3 /* Sources */,
+				4275392821FD23F600737FF3 /* Frameworks */,
+				4275392921FD23F600737FF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Flower WatchKit Extension";
+			productName = "Flower WatchKit Extension";
+			productReference = 4275392B21FD23F600737FF3 /* Flower WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		427538EC21FD23F000737FF3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = PLL;
+				TargetAttributes = {
+					427538F321FD23F000737FF3 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					4275390721FD23F500737FF3 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 427538F321FD23F000737FF3;
+					};
+					4275391221FD23F500737FF3 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 427538F321FD23F000737FF3;
+					};
+					4275391B21FD23F500737FF3 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					4275392A21FD23F600737FF3 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 427538EF21FD23F000737FF3 /* Build configuration list for PBXProject "Flower" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 427538EB21FD23F000737FF3;
+			productRefGroup = 427538F521FD23F000737FF3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				427538F321FD23F000737FF3 /* Flower */,
+				4275390721FD23F500737FF3 /* FlowerTests */,
+				4275391221FD23F500737FF3 /* FlowerUITests */,
+				4275391B21FD23F500737FF3 /* Flower WatchKit App */,
+				4275392A21FD23F600737FF3 /* Flower WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		427538F221FD23F000737FF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4275390221FD23F500737FF3 /* LaunchScreen.storyboard in Resources */,
+				427538FF21FD23F500737FF3 /* Assets.xcassets in Resources */,
+				427538FD21FD23F000737FF3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4275390621FD23F500737FF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4275391121FD23F500737FF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4275391A21FD23F500737FF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4275392521FD23F600737FF3 /* Assets.xcassets in Resources */,
+				4275392321FD23F500737FF3 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4275392921FD23F600737FF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4275393721FD23F600737FF3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		427538F021FD23F000737FF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				427538FA21FD23F000737FF3 /* ViewController.swift in Sources */,
+				427538F821FD23F000737FF3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4275390421FD23F500737FF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4275390D21FD23F500737FF3 /* FlowerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4275390F21FD23F500737FF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4275391821FD23F500737FF3 /* FlowerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4275392721FD23F600737FF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4275393521FD23F600737FF3 /* NotificationController.swift in Sources */,
+				4275393321FD23F600737FF3 /* ExtensionDelegate.swift in Sources */,
+				4275393121FD23F600737FF3 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4275390A21FD23F500737FF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 427538F321FD23F000737FF3 /* Flower */;
+			targetProxy = 4275390921FD23F500737FF3 /* PBXContainerItemProxy */;
+		};
+		4275391521FD23F500737FF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 427538F321FD23F000737FF3 /* Flower */;
+			targetProxy = 4275391421FD23F500737FF3 /* PBXContainerItemProxy */;
+		};
+		4275391F21FD23F500737FF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4275391B21FD23F500737FF3 /* Flower WatchKit App */;
+			targetProxy = 4275391E21FD23F500737FF3 /* PBXContainerItemProxy */;
+		};
+		4275392E21FD23F600737FF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4275392A21FD23F600737FF3 /* Flower WatchKit Extension */;
+			targetProxy = 4275392D21FD23F600737FF3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		427538FB21FD23F000737FF3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				427538FC21FD23F000737FF3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4275390021FD23F500737FF3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4275390121FD23F500737FF3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4275392121FD23F500737FF3 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4275392221FD23F500737FF3 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4275393A21FD23F600737FF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4275393B21FD23F600737FF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4275393D21FD23F600737FF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J2VV3665LJ;
+				INFOPLIST_FILE = "Flower WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tenacity.Flower.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		4275393E21FD23F600737FF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J2VV3665LJ;
+				INFOPLIST_FILE = "Flower WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tenacity.Flower.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		4275394121FD23F600737FF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J2VV3665LJ;
+				IBSC_MODULE = Flower_WatchKit_Extension;
+				INFOPLIST_FILE = "Flower WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = tenacity.Flower.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		4275394221FD23F600737FF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J2VV3665LJ;
+				IBSC_MODULE = Flower_WatchKit_Extension;
+				INFOPLIST_FILE = "Flower WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = tenacity.Flower.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		4275394521FD23F600737FF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J2VV3665LJ;
+				INFOPLIST_FILE = Flower/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tenacity.Flower;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4275394621FD23F600737FF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J2VV3665LJ;
+				INFOPLIST_FILE = Flower/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tenacity.Flower;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4275394821FD23F600737FF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J2VV3665LJ;
+				INFOPLIST_FILE = FlowerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tenacity.FlowerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flower.app/Flower";
+			};
+			name = Debug;
+		};
+		4275394921FD23F600737FF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J2VV3665LJ;
+				INFOPLIST_FILE = FlowerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tenacity.FlowerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flower.app/Flower";
+			};
+			name = Release;
+		};
+		4275394B21FD23F600737FF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J2VV3665LJ;
+				INFOPLIST_FILE = FlowerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tenacity.FlowerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Flower;
+			};
+			name = Debug;
+		};
+		4275394C21FD23F600737FF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J2VV3665LJ;
+				INFOPLIST_FILE = FlowerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tenacity.FlowerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Flower;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		427538EF21FD23F000737FF3 /* Build configuration list for PBXProject "Flower" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4275393A21FD23F600737FF3 /* Debug */,
+				4275393B21FD23F600737FF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4275393C21FD23F600737FF3 /* Build configuration list for PBXNativeTarget "Flower WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4275393D21FD23F600737FF3 /* Debug */,
+				4275393E21FD23F600737FF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4275394021FD23F600737FF3 /* Build configuration list for PBXNativeTarget "Flower WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4275394121FD23F600737FF3 /* Debug */,
+				4275394221FD23F600737FF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4275394421FD23F600737FF3 /* Build configuration list for PBXNativeTarget "Flower" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4275394521FD23F600737FF3 /* Debug */,
+				4275394621FD23F600737FF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4275394721FD23F600737FF3 /* Build configuration list for PBXNativeTarget "FlowerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4275394821FD23F600737FF3 /* Debug */,
+				4275394921FD23F600737FF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4275394A21FD23F600737FF3 /* Build configuration list for PBXNativeTarget "FlowerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4275394B21FD23F600737FF3 /* Debug */,
+				4275394C21FD23F600737FF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 427538EC21FD23F000737FF3 /* Project object */;
+}
