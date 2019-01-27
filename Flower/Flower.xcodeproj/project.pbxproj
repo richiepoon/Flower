@@ -22,6 +22,7 @@
 		4275393321FD23F600737FF3 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4275393221FD23F600737FF3 /* ExtensionDelegate.swift */; };
 		4275393521FD23F600737FF3 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4275393421FD23F600737FF3 /* NotificationController.swift */; };
 		4275393721FD23F600737FF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4275393621FD23F600737FF3 /* Assets.xcassets */; };
+		4275394E21FD26EB00737FF3 /* lotus_closed.png in Resources */ = {isa = PBXBuildFile; fileRef = 4275394D21FD26EB00737FF3 /* lotus_closed.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,7 @@
 		4275393621FD23F600737FF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4275393821FD23F600737FF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4275393921FD23F600737FF3 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		4275394D21FD26EB00737FF3 /* lotus_closed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lotus_closed.png; path = ../../lotus_closed.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +201,7 @@
 			children = (
 				4275392121FD23F500737FF3 /* Interface.storyboard */,
 				4275392421FD23F600737FF3 /* Assets.xcassets */,
+				4275394D21FD26EB00737FF3 /* lotus_closed.png */,
 				4275392621FD23F600737FF3 /* Info.plist */,
 			);
 			path = "Flower WatchKit App";
@@ -389,6 +392,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4275394E21FD26EB00737FF3 /* lotus_closed.png in Resources */,
 				4275392521FD23F600737FF3 /* Assets.xcassets in Resources */,
 				4275392321FD23F500737FF3 /* Interface.storyboard in Resources */,
 			);
@@ -698,6 +702,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J2VV3665LJ;
 				INFOPLIST_FILE = Flower/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -716,6 +721,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J2VV3665LJ;
 				INFOPLIST_FILE = Flower/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -1,16 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14256" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14243"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14219"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller fullBounds="YES" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Flower_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <imageView width="1" height="1" alignment="left" image="flower_guide" id="Wuj-lr-4Am">
+                            <gestureRecognizers>
+                                <longPressGestureRecognizer enabled="NO" minimumPressDuration="0.29999999999999999" id="TiY-1S-aVP">
+                                    <connections>
+                                        <action selector="longPressAction:" destination="AgC-eL-Hgc" id="xF7-CH-MfW"/>
+                                    </connections>
+                                </longPressGestureRecognizer>
+                                <swipeGestureRecognizer enabled="NO" direction="4" id="Klv-Wh-sm9">
+                                    <connections>
+                                        <action selector="SwipeUpAction:" destination="AgC-eL-Hgc" id="wNs-NA-HdI"/>
+                                    </connections>
+                                </swipeGestureRecognizer>
+                                <swipeGestureRecognizer enabled="NO" direction="8" id="879-JE-xFq">
+                                    <connections>
+                                        <action selector="SwipeDownAction:" destination="AgC-eL-Hgc" id="4il-i8-sKK"/>
+                                    </connections>
+                                </swipeGestureRecognizer>
+                                <swipeGestureRecognizer enabled="NO" id="DKV-kb-XjG">
+                                    <connections>
+                                        <action selector="SwipeRightAction:" destination="AgC-eL-Hgc" id="VhG-oC-CCc"/>
+                                    </connections>
+                                </swipeGestureRecognizer>
+                                <swipeGestureRecognizer enabled="NO" direction="2" id="BZD-nW-E7g">
+                                    <connections>
+                                        <action selector="SwipeLeftAction:" destination="AgC-eL-Hgc" id="NC4-an-KwZ"/>
+                                    </connections>
+                                </swipeGestureRecognizer>
+                                <tapGestureRecognizer id="pP1-t7-oJA">
+                                    <connections>
+                                        <action selector="TapAction:" destination="AgC-eL-Hgc" id="FsD-6y-kuF"/>
+                                    </connections>
+                                </tapGestureRecognizer>
+                            </gestureRecognizers>
+                        </imageView>
+                    </items>
+                    <connections>
+                        <outlet property="SwipeDown" destination="879-JE-xFq" id="inF-Rh-CLh"/>
+                        <outlet property="SwipeLeft" destination="BZD-nW-E7g" id="MxF-d0-GNj"/>
+                        <outlet property="SwipeRight" destination="DKV-kb-XjG" id="uVr-Ur-m7z"/>
+                        <outlet property="SwipeUp" destination="Klv-Wh-sm9" id="QGH-tn-z8m"/>
+                        <outlet property="Tap" destination="pP1-t7-oJA" id="XSx-qc-HQ8"/>
+                        <outlet property="closed" destination="Wuj-lr-4Am" id="vBB-Cu-ihe"/>
+                        <outlet property="longPress" destination="TiY-1S-aVP" id="sXw-CP-Zpb"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="350" y="-209"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -32,14 +82,14 @@
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Flower_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="Niz-AI-uX2">
             <objects>
-                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="Flower_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="345"/>
         </scene>
